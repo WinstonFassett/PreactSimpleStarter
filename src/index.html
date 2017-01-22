@@ -27,7 +27,10 @@
 		<% for (var chunk in  htmlWebpackPlugin.files.chunks) { %>
 			<script rel="preload" src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>" as="script"></script>
 		<% } %>
-		hi there
+		<div>
+			<h1>Vue SimpleStarter</h1>
+			<p>this is the shell</p>			
+		</div>		
 		<noscript style="text-align:center;">
 			<h2> Sorry, this app doesn't work without JavaScript. </h2>
 			<h5> Please <a href="http://enable-javascript.com/" target="_blank">enable javascript</a> and refresh your browser to continue</h5>

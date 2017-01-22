@@ -29,4 +29,3 @@ import './style/index.scss';
 // 	</Provider>, document.body);
 app.$mount(document.body);
 
-console.log('loaded');

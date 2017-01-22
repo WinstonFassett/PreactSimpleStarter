@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import App from './components/App.vue';
+import router from './router';
 
 const app = new Vue({
-  // more to come (see export)
+  router,
   ...App
 });
 
-export {app /* eventually router*/ /*, store*/};
+export {app, router };
