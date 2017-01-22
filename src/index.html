@@ -7,7 +7,6 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="format-detection" content="telephone=no">
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css">
 		<% if ( htmlWebpackPlugin.options.manifest) { %>
 			<link rel="manifest" href="<%= htmlWebpackPlugin.options.manifest %>">
 		<% } %>
@@ -28,9 +27,10 @@
 		<% for (var chunk in  htmlWebpackPlugin.files.chunks) { %>
 			<script rel="preload" src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>" as="script"></script>
 		<% } %>
+		hi there
 		<noscript style="text-align:center;">
-			<h2> PreactSS doesn't work without JavaScript. </h2>
+			<h2> Sorry, this app doesn't work without JavaScript. </h2>
 			<h5> Please <a href="http://enable-javascript.com/" target="_blank">enable javascript</a> and refresh your browser to continue</h5>
-		</noscript>
+		</noscript>		
 	</body>
 </html>

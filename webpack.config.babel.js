@@ -15,7 +15,7 @@ const ENV = process.env.NODE_ENV || 'development';
 module.exports = {
 	entry: {
 		app: './src/index.js',
-		vendor: ['preact', 'preact-router' , 'redux', 'preact-mdl']
+		// vendor: ['preact', 'preact-router' , 'redux', 'preact-mdl']
 	},
 
 	output: {
@@ -27,8 +27,6 @@ module.exports = {
 	resolve: {
 		extensions: ['.js'],
 		alias: {
-			'react': 'preact-compat',
-			'react-dom': 'preact-compat'
 		}
 	},
 
@@ -50,8 +48,7 @@ module.exports = {
 				test: /\.js$/,
 				loader: 'babel-loader',
 				include: [
-					path.resolve('src'),
-					path.resolve('node_modules/preact-compat/src')
+					path.resolve('src')
 				]
 			},
 			{
@@ -84,7 +81,7 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
-			title: 'Preact Simple Starter',
+			title: 'Vue Simple Starter',
 		 	removeRedundantAttributes: true,
 			inject: false,
 			manifest: `${ENV === 'production' ? 'manifest.json' : '/assets/manifest.json' }`,
