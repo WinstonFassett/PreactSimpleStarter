@@ -1,15 +1,11 @@
-# Preact Simple Starter
+# VanillaJS Simple Starter
 
 [![Build Status](https://travis-ci.org/ooade/fetch-gifs.svg?branch=master)](https://travis-ci.org/ooade/fetch-gifs)
 
-PWA Simple Starter with Preact, Webpack 2 and your favorite React related packages :rocket:
+PWA Simple Starter with VanillaJS, Webpack 2 and your favorite React related packages :rocket:
 
 This App uses:
-  - Preact
-  - Preact-mdl
-  - React-Router
-  - Redux
-  - React-Helmet
+  - VanillaJS
   - Sass
   - Webpack Dashboard(For Bundle Analysis)
 
@@ -30,8 +26,8 @@ _100/100 on lighthouse 1.4.1 audits_
 **1. Clone this repo:**
 
 ```sh
-git clone https://github.com/ooade/PreactSimpleStarter.git
-cd PreactSimpleStarter
+git clone https://github.com/ooade/VanillaJSSimpleStarter.git
+cd VanillaJSSimpleStarter
 ```
 
 
