@@ -10,7 +10,8 @@
     "prebuild": "rm -rf build mkdirp build",
     "test": "karma start test/karma.conf.js --single-run",
     "test:watch": "karma start test/karma.conf.js --auto-watch",
-    "push-surge": "npm run -s build && surge ./build -d vanilla-pwa.surge.sh"
+    "push-surge": "npm run -s build && surge ./build -d vanilla-pwa.surge.sh",
+    "lint": "eslint client/* --ext .js --ext .vue"
   },
   "author": "Winston Fassett <winston.fassett@gmail.com>",
   "license": "MIT",
