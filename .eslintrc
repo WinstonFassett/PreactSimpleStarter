@@ -1,20 +1,2 @@
 {
-  "parser": "babel-eslint",
-  "extends": "eslint:recommended",
-  "env": {
-    "browser": true,
-    "node": true
-  },
-  "ecmaFeatures": {
-    "modules": true,
-    "jsx": true
-  },
-  "rules": {
-    "no-console": 0,
-    "no-empty": 0,
-    "no-unused-vars": [0, { "varsIgnorePattern": "^h$" }],
-    "camelcase": 0,
-    "no-shadow": 0,
-    "handle-callback-err": 0,
-  }
 }
