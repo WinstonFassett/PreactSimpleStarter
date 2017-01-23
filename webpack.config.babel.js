@@ -27,7 +27,13 @@ module.exports = {
 	resolve: {
 		extensions: ['.js'],
 		alias: {
-		}
+		},
+		modules: [
+			path.resolve(__dirname, 'node_modules'),
+			// resolve files in src without requiring relative paths
+			// i.e. import 'components/Foo' instead of import '../../components/Foo'
+			path.resolve(__dirname, 'src')
+		]
 	},
 
 	module: {
