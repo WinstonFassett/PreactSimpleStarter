@@ -156,7 +156,7 @@ module.exports = {
 
 	stats: { colors: true },
 
-	devtool: ENV !== 'production' && 'eval',
+	devtool: ENV !== 'production' && 'source-map',
 	devServer: {
 		port: process.env.PORT || 8080,
 		host: '0.0.0.0',
