@@ -25,7 +25,7 @@ module.exports = {
 	},
 
 	resolve: {
-		extensions: ['.js'],
+		extensions: ['.js', '.vue'],
 		alias: {
 		},
 		modules: [
