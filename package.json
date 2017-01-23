@@ -13,6 +13,8 @@
     "push-surge": "npm run -s build && surge ./build -d vanilla-pwa.surge.sh",
     "stats": "webpack --config build/webpack.base.js --profile --json > dist/stats.json",
     "lint": "eslint src/* --ext .js --ext .vue --ignore-pattern *.html",
+    "lint:fix": "eslint src/* --ext .js --ext .vue --ignore-pattern *.html --fix"
+    
   },
   "author": "Winston Fassett <winston.fassett@gmail.com>",
   "license": "MIT",
