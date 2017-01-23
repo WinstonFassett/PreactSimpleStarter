@@ -12,7 +12,7 @@
     "test:watch": "karma start test/karma.conf.js --auto-watch",
     "push-surge": "npm run -s build && surge ./build -d vanilla-pwa.surge.sh",
     "stats": "webpack --config build/webpack.base.js --profile --json > dist/stats.json",
-    "lint": "eslint client/* --ext .js --ext .vue"
+    "lint": "eslint src/* --ext .js --ext .vue --ignore-pattern *.html",
   },
   "author": "Winston Fassett <winston.fassett@gmail.com>",
   "license": "MIT",
