@@ -12,13 +12,8 @@
     "test:watch": "karma start test/karma.conf.js --auto-watch",
     "push-surge": "npm run -s build && surge ./build -d vanilla-pwa.surge.sh"
   },
-  "keywords": [
-    "redux",
-    "sass",
-    "yarn"
-  ],
+  "author": "Winston Fassett <winston.fassett@gmail.com>",
   "license": "MIT",
-  "author": "Ademola Adegbuyi <marhyorh@gmail.com>",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel": "^6.5.2",
