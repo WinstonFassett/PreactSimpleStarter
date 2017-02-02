@@ -15,7 +15,7 @@ const ENV = process.env.NODE_ENV || 'development';
 module.exports = {
 	entry: {
 		app: './src/index.js',
-		// vendor: ['preact', 'preact-router' , 'redux', 'preact-mdl']
+		vendor: ['vue']
 	},
 
 	output: {
@@ -38,6 +38,10 @@ module.exports = {
 
 	module: {
 		rules: [
+			{
+				test: /\.vue$/,
+				loader: 'vue-loader'
+			},
 			{
 				enforce: 'pre',
 				test: /\.js$/,
